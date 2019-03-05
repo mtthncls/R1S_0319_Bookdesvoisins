@@ -9,25 +9,39 @@
 {
     border: 2px solid black;
 }
-.mrBox{
-    border: 1px solid white;
+
+.mrBox
+{
     background-color: white;
     width: 85px;
     height: 25px;
     left: 5%;
     top: -10px;
 }
-.placeholderLogo{
+
+.placeholderLogo
+{
     margin-top: 15%;
     margin-left: 11%;
     margin-bottom: 11%;
 }
-.entrepriseText{
-    width: 60%;
-    position: absolute;
-    padding-left: 4%;
+
+.entrepriseText
+{
+    height: 73%;
+    width: 70%;
+    overflow: hidden;
 }
-.expandButton{
+
+
+.photoBox
+{
+    margin-top: -25px;
+    margin-left: 50px;
+}
+
+.expandButton
+{
     position: absolute;
     top: 12%;
     right: 15%;
