@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .box{
     border: 2px solid black;
 }
@@ -24,3 +25,11 @@
     top: 12%;
     right: 15%;
 }
+=======
+/*Carousel*/
+.photos
+{
+  padding-right: 0;
+  padding-left: 0;
+}
+>>>>>>> carrousel
