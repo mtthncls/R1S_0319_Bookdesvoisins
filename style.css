@@ -5,6 +5,31 @@
   padding-left: 0;
 }
 
+/*header*/
+.container-header {
+    
+}
+
+
+/*Footer*/
+.container-footer 
+{
+    margin-left: 15px;
+}
+
+.footer-info 
+{
+    position: relative;
+    left: 15px;
+    width: 400px;
+}
+
+.footer-map 
+{
+    position: relative;
+    right: 15px;
+}
+
 .box
 {
     border: 2px solid black;
