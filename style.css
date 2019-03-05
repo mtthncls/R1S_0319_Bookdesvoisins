@@ -1,3 +1,4 @@
+
 .box{
     border: 2px solid black;
 }
@@ -18,7 +19,21 @@
     width: 70%;
     overflow: hidden;
 }
+
 .photoBox{
     margin-top: -25px;
     margin-left: 50px;
+}
+
+.expandButton{
+    position: absolute;
+    top: 12%;
+    right: 15%;
+}
+
+/*Carousel*/
+.photos
+{
+  padding-right: 0;
+  padding-left: 0;
 }
