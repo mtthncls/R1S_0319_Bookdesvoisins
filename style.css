@@ -6,9 +6,8 @@
     background-color: white;
     width: 85px;
     height: 25px;
-    position: absolute;
-    top: 15px;
     left: 5%;
+    bottom: 90%;
 }
 .placeholderLogo{
     margin-top: 15%;
