@@ -2,7 +2,6 @@
     border: 2px solid black;
 }
 .mrBox{
-    border: 1px solid white;
     background-color: white;
     width: 85px;
     height: 25px;
@@ -15,12 +14,11 @@
     margin-bottom: 11%;
 }
 .entrepriseText{
-    width: 60%;
-    position: absolute;
-    padding-left: 4%;
+    height: 73%;
+    width: 70%;
+    overflow: hidden;
 }
-.expandButton{
-    position: absolute;
-    top: 12%;
-    right: 15%;
+.photoBox{
+    margin-top: -25px;
+    margin-left: 50px;
 }
