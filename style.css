@@ -1,0 +1,27 @@
+.box{
+    border: 2px solid black;
+}
+.mrBox{
+    border: 1px solid white;
+    background-color: white;
+    width: 85px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    left: 5%;
+}
+.placeholderLogo{
+    margin-top: 15%;
+    margin-left: 11%;
+    margin-bottom: 11%;
+}
+.entrepriseText{
+    width: 60%;
+    position: absolute;
+    padding-left: 4%;
+}
+.expandButton{
+    position: absolute;
+    top: 12%;
+    right: 15%;
+}
