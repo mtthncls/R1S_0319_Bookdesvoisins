@@ -1,3 +1,8 @@
+.logo-item
+{
+    width: 20%;
+}
+
 .box{
     border: 2px solid black;
 }
@@ -23,4 +28,9 @@
     position: absolute;
     top: 12%;
     right: 15%;
+}
+footer 
+{
+    background-color: grey;
+    text-decoration-color: white;
 }
