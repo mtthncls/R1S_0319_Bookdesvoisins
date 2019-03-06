@@ -67,7 +67,6 @@
 
 .expandButton
 {
-    position: absolute;
-    top: 12%;
-    right: 15%;
+    position: relative;
+    right: 1%;
 }
