@@ -32,10 +32,9 @@
 .mrBox
 {
     background-color: white;
-    width: 85px;
-    height: 25px;
-    left: 5%;
-    top: -10px;
+    width: 6rem;
+    height: 2rem;
+    top: -1rem;
 }
 
 .placeholderLogo
