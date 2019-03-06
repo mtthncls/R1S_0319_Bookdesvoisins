@@ -6,28 +6,19 @@
 }
 
 /*header*/
-.container-header {
-    
+.logo-QL {
+    width: 30%;
 }
 
 
 /*Footer*/
 .container-footer 
 {
-    margin-left: 15px;
 }
 
 .footer-info 
 {
-    position: relative;
-    left: 15px;
-    width: 400px;
-}
-
-.footer-map 
-{
-    position: relative;
-    right: 15px;
+    width: 100%;
 }
 
 .box
