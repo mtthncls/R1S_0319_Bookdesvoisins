@@ -8,95 +8,403 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
+
   <title>Book des voisins</title>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <a href="http://zupimages.net/viewer.php?id=19/10/f9rb.png"><img class="logo-item" src="https://zupimages.net/up/19/10/f9rb.png" alt=""/></a>
-      <h1>Book des résidents</h1>
-    </div>
-  </header>
+  <main>
+    <header>
+      <div class="container container-header">
+        <div class="row">
+          <div class="box-logo col-sm-5 col-lg-2">
+            <a href="http://zupimages.net/viewer.php?id=19/10/f9rb.png"><img
+                src="https://zupimages.net/up/19/10/f9rb.png" style="height: 135px;" alt="" /></a>
+          </div>
+          <div class="box-titre col-sm-7 col-lg-10">
+            <h1 style="text-align: center">Book des résidents</h1>
+          </div>
 
-  <!--Carousel-->
-  <div class="container">
-    <div id="carouselQuartierLibre" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://via.placeholder.com/300x150" class="d-block w-100" alt="img1">
         </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/300x150" class="d-block w-100" alt="img2">
+    </header>
+    <!--Carousel-->
+    <section class="container photos">
+      <article class="row">
+        <div class="col-md-6">
+          <div id="carouselQuartierLibre" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://zupimages.net/up/19/10/fpq2.jpg" class="d-block w-100" alt="img1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://zupimages.net/up/19/10/74ds.jpg" class="d-block w-100" alt="img2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://zupimages.net/up/19/10/etm2.jpg" class="d-block w-100" alt="img3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselQuartierLibre" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselQuartierLibre" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/300x150" class="d-block w-100" alt="img3">
+
+        <!--Presentation QL-->
+        <article class="row col-md-6">
+          <h3>Qu'est-ce que le Quartier Libre ?</h3>
+          <div class="overflow-auto" style="height: 14rem">Lorem ipsum dolor sit amet, consectetur
+            adipiscing
+            elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+            Cras
+            elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor,
+            orci
+            nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu
+            massa,
+            scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero
+            pharetra
+            tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim.
+            Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et
+            ultrices
+            posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing
+            ante
+            non diam sodales hendrerit.
+          </div>
+        </article>
+      </article>
+    </section>
+
+
+    <!--Collapse group on bootstrap for expand button-->
+    <article class="container border border-dark mt-4 ">
+      <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+        <div class="container position-relative  mrBox">
+          <div class="row col-sm-12">
+            <header>Mr/Mms</header>
+          </div>
         </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselQartierLibre" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselQuartierLibre" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-  <!--Collapse group on bootstrap for expand button-->
-  <div class="container col-sm-12 mt-4 mr-4 box">
-    <div class="row">
-      <div class="container col-sm-12 position-absolute mrBox">
-        <p>Mr/Mms</p>
-      </div>
-      <a href="https://placeholder.com"><img class="placeholderLogo" src="https://via.placeholder.com/100"></a>
-      <div>
-        <p class="text-center entrepriseText mt-3 mb-2">Description</p>
-        <div class="container">
-          <a class="btn btn-primary expandButton" data-toggle="collapse" href="#collapseExample" role="button"
-            aria-expanded="false" aria-controls="collapseExample"> Link with href</a>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
-              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        <div class="card mb-3 mt-4 justify-content-center" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-  <footer>
-    <div class="container container-footer mt-4">
-      <div class="row">
-        <div class="container-info col-sm-12 col-lg-6">
-          <h6>Quartier Libre</h6>
-          <p>6 Rue de Saint-Brice</p>
-          <div class="container-RS">
-            <a class="btn btn-primary" href="https://www.instagram.com/quartierlibrereims/" role="button">Link</a>
-            <a class="btn btn-primary" href="https://www.facebook.com/quartierlibrereims" role="button">Link</a>
-            <a class="btn btn-primary" href="https://twitter.com/QuartierLibreRs/" role="button">Link</a>
+      <p>
+        <a class="btn btn-primary col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3" data-toggle="collapse"
+          href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+          Link with href
+        </a>
+      </p>
+      <div class="collapse" id="collapse1">
+        <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="container-map col-sm-12 col-lg-6">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1302.0128085821052!2d4.018691459222297!3d49.256960363522445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e97501a1f9a0f5%3A0xf9ef0cdf67c7926a!2s6+Rue+de+Saint-Brice%2C+51100+Reims!5e0!3m2!1sfr!2sfr!4v1551781794478"
-            width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="container border border-dark mt-4 ">
+      <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+        <div class="container position-relative  mrBox">
+          <div class="row col-sm-12">
+            <header>Mr/Mms</header>
+          </div>
+        </div>
+        <div class="card mb-3 mt-4 justify-content-center" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-  </footer>
+      <p>
+        <a class="btn btn-primary col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3" data-toggle="collapse"
+          href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+          Link with href
+        </a>
+      </p>
+      <div class="collapse" id="collapse2">
+        <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="container border border-dark mt-4 ">
+      <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+        <div class="container position-relative  mrBox">
+          <div class="row col-sm-12">
+            <header>Mr/Mms</eader>
+          </div>
+        </div>
+        <div class="card mb-3 mt-4 justify-content-center" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-primary col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3" data-toggle="collapse"
+          href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+          Link with href
+        </a>
+      </p>
+      <div class="collapse" id="collapse3">
+        <div class="row row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="container border border-dark mt-4 ">
+      <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+        <div class="container position-relative  mrBox">
+          <div class="row col-sm-12">
+            <header>Mr/Mms</header>
+          </div>
+        </div>
+        <div class="card mb-3 mt-4 justify-content-center" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-primary col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3" data-toggle="collapse"
+          href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+          Link with href
+        </a>
+      </p>
+      <div class="collapse" id="collapse4">
+        <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="container border border-dark mt-4 ">
+      <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+        <div class="container position-relative  mrBox">
+          <div class="row col-sm-12">
+            <header>Mr/Mms</header>
+          </div>
+        </div>
+        <div class="card mb-3 mt-4 justify-content-center" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-primary col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3" data-toggle="collapse"
+          href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
+          Link with href
+        </a>
+      </p>
+      <div class="collapse" id="collapse5">
+        <div class="row row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="container border border-dark mt-4 ">
+      <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+          <div class="container position-relative  mrBox">
+              <div class="row col-sm-12">
+                <header>Mr/Mms</header>
+              </div>
+            </div>
+        <div class="card mb-3 mt-4 justify-content-center" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-primary col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3" data-toggle="collapse"
+          href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6">
+          Link with href
+        </a>
+      </p>
+      <div class="collapse" id="collapse6">
+        <div class="row col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-md-2 offset-lg-3">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <div class="container bg-dark mt-4">
+        <div class=row>
+          <div class="footer-info col-sm-10 col-lg-5 text-light">
+            <h6>Quartier Libre</h6>
+            <p>6 Rue de Saint-Brice</p>
+          </div>
+          <div class="button-RS col-sm-2 col-lg-1">
+            <a class="btn btn-primary mt-5" href="https://www.facebook.com/quartierlibrereims/" role="button">Link</a>
+            <a class="btn btn-primary mt-5" href="https://twitter.com/QuartierLibreRs" role="button">Link</a>
+            <a class="btn btn-primary mt-5" href="https://www.instagram.com/quartierlibrereims/" role="button">Link</a>
+          </div>
+          <div class="footer-map col-sm-12 col-lg-6 mt-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1302.0128085821052!2d4.018691459222297!3d49.256960363522445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e97501a1f9a0f5:0xf9ef0cdf67c7926a!2s6+Rue+de+Saint-Brice,+51100+Reims!5e0!3m2!1sfr!2sfr!4v1551781794478"
+              width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </main>
 </body>
 
 </html>
