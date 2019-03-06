@@ -18,10 +18,15 @@
 .mrBox
 {
     background-color: white;
-    width: 6rem;
+    width: 15rem;
     height: 2rem;
     top: -1rem;
     font-size: 19px;
+    left: -25rem;
+}
+.btn-dark
+{
+    color: rgba(0,203,179);
 }
 
 .placeholderLogo
