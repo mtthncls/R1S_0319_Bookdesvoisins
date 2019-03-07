@@ -1,5 +1,18 @@
 
-
+main
+{
+    font-family: 'Catamaran', sans-serif;
+}
+h1
+{
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 2rem;
+    
+}
+header
+{
+    font-family: 'Patua One', cursive;
+}
 /*Footer*/
 .footer-info 
 {
