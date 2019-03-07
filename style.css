@@ -18,11 +18,11 @@
 .mrBox
 {
     background-color: white;
-    width: 15rem;
+    width: 12rem;
     height: 2rem;
     top: -1rem;
-    font-size: 19px;
-    left: -25rem;
+    font-size: 22px;
+    padding-right: 0px;;
 }
 .btn-dark
 {
