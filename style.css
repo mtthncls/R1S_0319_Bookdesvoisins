@@ -24,9 +24,19 @@
     font-size: 22px;
     padding-right: 0px;;
 }
-.btn-dark
+.btn-light
 {
     color: rgba(0,203,179);
+    margin-left: 26%;
+    background-color: white;
+    border: 1px solid rgba(0,203,179);
+}
+.btn-light:hover
+{
+    color: rgba(0,203,179);
+    margin-left: 26%;
+    background-color: white;
+    border: 1px solid rgba(0,203,179);
 }
 
 .placeholderLogo
@@ -42,7 +52,10 @@
     width: 70%;
     overflow: hidden;
 }
-
+.card
+{
+    border: 0px solid beige;
+}
 .expandButton
 {
     position: relative;
