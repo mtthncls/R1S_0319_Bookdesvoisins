@@ -10,14 +10,22 @@ main
 }
 h1
 {
-    font-family: 'Luckiest Guy', cursive;
     margin-top: 2rem;
-    
-}
-header
+}   
+.police
 {
-    font-family: 'Patua One', cursive;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 19px;
 }
+
+
+/*Carousel*/
+.box-carousel
+{
+    padding-right: 0;
+    padding-left: 0; 
+}
+
 /*Footer*/
 .footer-info 
 {
