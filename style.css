@@ -1,17 +1,9 @@
-<<<<<<< HEAD
+
 .logo-item
 {
     width: 20%;
 }
 
-.box{
-=======
-/*Carousel*/
-.photos
-{
-  padding-right: 0;
-  padding-left: 0;
-}
 /*Footer*/
 .footer-info 
 {
@@ -20,16 +12,21 @@
 
 .box
 {
->>>>>>> cdb36dff5f3ec88d26c923034f1d3aac63237935
     border: 2px solid black;
 }
 
 .mrBox
 {
     background-color: white;
-    width: 6rem;
-    height: 1rem;
+    width: 15rem;
+    height: 2rem;
     top: -1rem;
+    font-size: 19px;
+    left: -25rem;
+}
+.btn-dark
+{
+    color: rgba(0,203,179);
 }
 
 .placeholderLogo
@@ -51,7 +48,6 @@
     position: relative;
     right: 1%;
 }
-<<<<<<< HEAD
 .expandButton{
     position: absolute;
     top: 12%;
@@ -62,5 +58,3 @@ footer
     background-color: grey;
     text-decoration-color: white;
 }
-=======
->>>>>>> cdb36dff5f3ec88d26c923034f1d3aac63237935
