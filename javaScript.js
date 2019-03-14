@@ -1,6 +1,3 @@
-const nameElem = document.getElementById("name");
-console.log(nameElem);
-
 //Array peoples
 
 const resid = [
@@ -41,8 +38,14 @@ const resid = [
       link : "p"
     }
   ]
- console.log(resid[0].name);
 
-for (let key in resid){
-    nameElem.innerHTML = (resid[2].name);
+const nameElem = document.getElementById("name");
+console.log(nameElem);
+
+let nameClassElem = document.getElementsByClassName("jsTest");
+console.log(nameClassElem)
+let constTest = "";
+for (let i = 0; i < resid.length; i++){
+  constTest += `${resid[i].name}`
+nameClassElem = constTest;
 }
