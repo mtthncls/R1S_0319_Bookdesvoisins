@@ -19,7 +19,7 @@ const resids = [
       corporation : "AdBack",
       corporationPicture : "data:image/png;base64,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",
       corporationPresentation : "AdBack est une entreprise dans le secteur de la publicité en ligne dont le but est d'offrir des statistiques concernant l'audience des utilisateurs adblockers et offrir des solutions de remonétisation de cette audience.",
-      corporationLink : ""
+      corporationLink : "https://landing.adback.co/"
     },
     {
       name : "Costa Nathalie",
@@ -29,7 +29,7 @@ const resids = [
       corporation : "NC Communication's",
       corporationPicture : "https://quartierlibre.co/sites/default/files/upload/GABARIT_NC%20Communication.png",
       corporationPresentation :"En tant que free-lance, elle assure des prestations de rédaction de contenus pour tout support de communication (articles, contenus de sites ou de plaquettes). Les relations presse constituent le cœur de son activité. Elle conçoit et met en oeuvre des stratégies RP grâce à des supports dédiés et un fichier qualifié de journalistes.",
-      corporationLink : ""
+      corporationLink : "http://nathaliecosta.com/"
     },
     {
       name : "Mairesse Amélie",
@@ -39,7 +39,7 @@ const resids = [
       corporation : "5euros",
       corporationPicture : "https://5euros.com/built/img/logo-5euros.svg",
       corporationPresentation : "Plateforme collaborative de microservices en ligne",
-      corporationLink : ""
+      corporationLink : "https://5euros.com/"
     },
     {
       name : "Bechetoille Clément",
@@ -49,7 +49,7 @@ const resids = [
       corporation : "Wild Code School",
       corporationPicture : "https://wildcodeschool.fr/wp-content/uploads/2019/01/logo_pink_176x60.png",
       corporationPresentation : "La Wild Code School est un réseau de 17 écoles (dont 13 en France) nouvelle génération qui proposent des formations intensives au métiers du numérique. ",
-      corporationLink : ""
+      corporationLink : "https://wildcodeschool.fr/"
     },
     {
       name : "Hubert Mickael",
@@ -59,7 +59,7 @@ const resids = [
       corporation : "Allo-Media",
       corporationPicture : "https://www.allo-media.fr/assets/img/vitrine/logo.png",
       corporationPresentation : "Allo-Media est une startup Parisienne qui travaille dans l'intelligence artificielle autour de la reconnaissance vocale à partir de la téléphonie.",
-      corporationLink : ""
+      corporationLink : "https://www.allo-media.fr/"
     }
   ]
 
@@ -79,12 +79,13 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="row no-gutters">
         <div class="col-md-4">
           <img
-            src="${resids[i].picture}"class="card-img" alt="...">
+            src=${resids[i].picture} class="card-img" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title police">${resids[i].name}</h5>
             <p class="card-text">${resids[i].presentation}</p>
+            <p class="card-text"><a href="${resids[i].personnalLink}">Lien vers le profil de notre résident.</a></p>
           </div>
         </div>
       </div>
@@ -92,34 +93,36 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="card mb-3 d-none d-lg-block col-5" style="max-width: 540px;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <img src="${resids[i].corporationPicture}" class="card-img" alt="...">
+          <img src=${resids[i].corporationPicture} class="card-img" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title police">${resids[i].corporation}</h5>
             <p class="card-text">${resids[i].corporationPresentation}</p>
+            <p class="card-text"><a href="${resids[i].corporationLink}">${resids[i].corporationLink}</a></p>
           </div>
         </div>
       </div>
     </div>
     <div class="row col-sm-8">
       <p>
-        <a class="btn btn-light col-12 d-lg-none" data-toggle="collapse" href="#collapse0" role="button"
-          aria-expanded="false" aria-controls="collapse0">
+        <a class="btn btn-light col-12 d-lg-none" data-toggle="collapse" href="#collapse${i}" role="button"
+          aria-expanded="false" aria-controls="collapse${i}">
           Plus d'informations
         </a>
       </p>
     </div>
-    <div class="collapse" id="collapse0">
+    <div class="collapse" id="collapse${i}">
       <div class="card mb-3 col-6" style="max-width: 540px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="${resids[i].corporationPicture}" class="card-img" alt="...">
+            <img src=${resids[i].corporationPicture} class="card-img" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title police">${resids[i].corporation}</h5>
-              <p class="card-text">${resids[i].corporationPicture}</p>
+              <p class="card-text">${resids[i].corporationPresentation}</p>
+              <p class="card-text"><a href="${resids[i].corporationLink}">${resids[i].corporationLink}</a></p>
             </div>
           </div>
         </div>
