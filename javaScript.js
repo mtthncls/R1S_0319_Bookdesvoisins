@@ -1,4 +1,39 @@
-//Array peoples
+//Array adressses
+
+const adressQg = [{
+  name: 'Quartiers Généraux',
+  street: '6 Rue de Saint-Brice',
+  city: '51100 Reims'
+}]
+const adressPh = [{
+  name: 'La Petite Halle',
+  street: '53 Rue Vernouillet',
+  city: '51100 Reims'
+}]
+
+document.addEventListener("DOMContentLoaded", () => {
+  location1Elem = document.getElementById("location1");
+  let adressCount = "";
+  for (let i = 0; i < adressQg.length; i++) {
+    adressCount += `<div class="item-qg" id="location1">
+  <h6 style="text-decoration: underline"><B>${adressQg[i].name}</B></h6>
+  <p>${adressQg[i].street}<br>${adressQg[i].city}</p>
+</div>`
+  }
+  location1Elem.innerHTML = adressCount;
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  location2Elem = document.getElementById("location2");
+  let adressCount = "";
+  for (let i = 0; i < adressPh.length; i++) {
+    adressCount += `<div class="item-Ph" id="location2">
+  <h6 style="text-decoration: underline"><B>${adressPh[i].name}</B></h6>
+  <p>${adressPh[i].street}<br>${adressPh[i].city}</p>
+</div>`
+  }
+  location2Elem.innerHTML = adressCount;
+});
 
 const resids = [
     {
