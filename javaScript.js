@@ -1,15 +1,22 @@
 // Carousel modal
+const closeModalElem = document.getElementById('modal')
+const clickableElem = document.getElementById("carouselQuartierLibre");
+
 const displayBox = () => {
-  console.log("displaybox function");
-  const hiddenModal = document.getElementById("modal");
-  hiddenModal.style.display = "block";
+  const hiddenModalElem = document.getElementById("modal");
+  hiddenModalElem.style.display = "block";
 }
 
+const closeBox = () => {
+  const closeModalElem = document.getElementById("modal");
+  closeModalElem.style.display = 'none';
+}
 
-console.log("test");
-const clickableElem = document.getElementById("carouselQuartierLibre");
-console.log(clickableElem);
 clickableElem.addEventListener("click", () => {
-  console.log("cliked!!")
   displayBox();
 });
+
+
+closeModalElem.addEventListener('click', () => {
+  closeBox();
+})
