@@ -1,6 +1,6 @@
 //Array peoples
 
-const resid = [
+const resids = [
     {
       name : "Faucheux Virgine",
       presentation :"Pour la société Le Bloc j'occupe les fonctions d'Office Manager, en d'autres termes l’administratif et la comptabilité. Sur le projet Quartier Libre, j'ai en charge l'animation de la vie communautaire et la gestion des bâtiments, donc le bien-être des Résidents",
@@ -39,21 +39,12 @@ const resid = [
     }
   ]
 
-/*let nameClassElem = document.getElementsByClassName("poeplesName");
-console.log(nameClassElem)
-let constTest = "";
-for (let i = 0; i < resid.length; i++){
-  constTest += `It is ${resid[i].name}`
-  nameClassElem.innerHTML = constTest;
-  console.log(nameClassElem);
-}*/
-
-document.addEventListener("DOMContentLoaded", () => [
+document.addEventListener("DOMContentLoaded", () => {
   residsListElem = document.getElementById("residsList");
-  console.log(residsListElem);
-let peoplesCount = "";
-for (let i = 0; i < resid.length; i++){
-  peoplesCount += `<article class="container rounded-sm mt-4 cyanBorder">
+
+  let peoplesCount = "";
+  for (let i = 0; i < resids.length; i++) {
+    peoplesCount += `<article class="container rounded-sm mt-4 cyanBorder">
   <div class="row">
     <div class="container position-relative mrBox">
       <div class="row col-sm-12" style="background-color: white; height: 2rem; width: 8rem;">
@@ -64,12 +55,12 @@ for (let i = 0; i < resid.length; i++){
       <div class="row no-gutters">
         <div class="col-md-4">
           <img
-            src="https://quartierlibre.co/sites/default/files/styles/large/public/upload/Le%20Bloc_Virginie%20FAUCHEUX.jpg?itok=2_PVa9vb"class="card-img" alt="...">
+            src="${resids[i].picture}"class="card-img" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title police">${resid[i].name}</h5>
-            <p class="card-text">Pour la société Le Bloc j'occupe les fonctions d'Office Manager, en d'autres termes l’administratif et la comptabilité. Sur le projet Quartier Libre, j'ai en charge l'animation de la vie communautaire et la gestion des bâtiments, donc le bien-être des Résidents</p>
+            <h5 class="card-title police">${resids[i].name}</h5>
+            <p class="card-text">${resids[i].presentation}</p>
           </div>
         </div>
       </div>
@@ -82,7 +73,7 @@ for (let i = 0; i < resid.length; i++){
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title police">Le Bloc</h5>
-            <p class="card-text">${resid[i].presentation}</p>
+            <p class="card-text"></p>
           </div>
         </div>
       </div>
@@ -99,7 +90,7 @@ for (let i = 0; i < resid.length; i++){
       <div class="card mb-3 col-6" style="max-width: 540px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="${resid[i].picture}" class="card-img" alt="...">
+            <img src="" class="card-img" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -113,6 +104,7 @@ for (let i = 0; i < resid.length; i++){
     </div>
   </div>
 </article>`
-residsList.innerHTML = peoplesCount
-}
-]);
+  }
+  residsListElem.innerHTML = peoplesCount;
+  console.log(residsListElem);
+});
