@@ -39,13 +39,80 @@ const resid = [
     }
   ]
 
-const nameElem = document.getElementById("name");
-console.log(nameElem);
-
-let nameClassElem = document.getElementsByClassName("jsTest");
+/*let nameClassElem = document.getElementsByClassName("poeplesName");
 console.log(nameClassElem)
 let constTest = "";
 for (let i = 0; i < resid.length; i++){
-  constTest += `${resid[i].name}`
-nameClassElem = constTest;
+  constTest += `It is ${resid[i].name}`
+  nameClassElem.innerHTML = constTest;
+  console.log(nameClassElem);
+}*/
+
+document.addEventListener("DOMContentLoaded", () => [
+  residsListElem = document.getElementById("residsList");
+  console.log(residsListElem);
+let peoplesCount = "";
+for (let i = 0; i < resid.length; i++){
+  peoplesCount += `<article class="container rounded-sm mt-4 cyanBorder">
+  <div class="row">
+    <div class="container position-relative mrBox">
+      <div class="row col-sm-12" style="background-color: white; height: 2rem; width: 8rem;">
+        <header>Nos résidents</header>
+      </div>
+    </div>
+    <div class="card mb-3 col-sm-9" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img
+            src="https://quartierlibre.co/sites/default/files/styles/large/public/upload/Le%20Bloc_Virginie%20FAUCHEUX.jpg?itok=2_PVa9vb"class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title police">${resid[i].name}</h5>
+            <p class="card-text">Pour la société Le Bloc j'occupe les fonctions d'Office Manager, en d'autres termes l’administratif et la comptabilité. Sur le projet Quartier Libre, j'ai en charge l'animation de la vie communautaire et la gestion des bâtiments, donc le bien-être des Résidents</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 d-none d-lg-block col-5" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="https://quartierlibre.co/sites/default/files/upload/img20_0.png" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title police">Le Bloc</h5>
+            <p class="card-text">${resid[i].presentation}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row col-sm-8">
+      <p>
+        <a class="btn btn-light col-12 d-lg-none" data-toggle="collapse" href="#collapse0" role="button"
+          aria-expanded="false" aria-controls="collapse0">
+          Plus d'informations
+        </a>
+      </p>
+    </div>
+    <div class="collapse" id="collapse0">
+      <div class="card mb-3 col-6" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="${resid[i].picture}" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title police">Le Bloc</h5>
+              <p class="card-text">La société Le Bloc a pour objectif de développer des solutions éphémères et pérennes, visant la valorisation de l’innovation, la création et l’entrepreneuriat sur notre territoire.
+                Elle a porte, entre autre, le projet multidimensionnel dénommé Quartier Libre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>`
+residsList.innerHTML = peoplesCount
 }
+]);
