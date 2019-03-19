@@ -10,92 +10,86 @@
     overflow: auto;
 }
 
-.logo-item
-{
+
+.logo-item {
     width: 20%;
 }
 
-main
-{
+main {
     font-family: 'Catamaran', sans-serif;
 }
-h1
-{
-   margin-top: 2rem;
-   color: white;
+
+h1 {
+    margin-top: 2rem;
+    color: white;
 }
-   
-.police
-{
+
+.police {
     font-family: 'Luckiest Guy', cursive;
     font-size: 14px;
 }
 
 /*Footer*/
-.footer-info 
-{
+.footer-info {
     width: 100%;
 }
 
-.box
-{
+.box {
     border: 2px solid black;
 }
 
-.mrBox
-{
+.mrBox {
     top: -1rem;
     font-size: 16px;
     left: 20px;
 }
-.btn-light
-{
-    color: rgba(0,203,179);
+
+.btn-light {
+    color: rgba(0, 203, 179);
     margin-left: 26%;
     background-color: white;
-    border: 1px solid rgba(0,203,179);
-}
-.btn-light:hover
-{
-    color: rgba(0,203,179);
-    margin-left: 26%;
-    background-color: white;
-    border: 1px solid rgba(0,203,179);
+    border: 1px solid rgba(0, 203, 179);
 }
 
-.placeholderLogo
-{
+.btn-light:hover {
+    color: rgba(0, 203, 179);
+    margin-left: 26%;
+    background-color: white;
+    border: 1px solid rgba(0, 203, 179);
+}
+
+.placeholderLogo {
     margin-top: 15%;
     margin-left: 11%;
     margin-bottom: 11%;
 }
 
-.entrepriseText
-{
+.entrepriseText {
     height: 73%;
     width: 70%;
     overflow: hidden;
 }
-.card
-{
+
+.card {
     border: 0px solid beige;
 }
-.expandButton
-{
+
+.expandButton {
     position: relative;
     right: 1%;
 }
-.expandButton{
+
+.expandButton {
     position: absolute;
     top: 12%;
     right: 15%;
 }
-footer 
-{
+
+footer {
     background-color: grey;
     text-decoration-color: white;
 }
 
-.cyanBorder{
-    border: 1px solid rgba(0,203,179);
+.cyanBorder {
+    border: 1px solid rgba(0, 203, 179);
 }
