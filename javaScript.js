@@ -2,23 +2,23 @@
 const closeModalElem = document.getElementById("modal")
 const clickableElem = document.getElementById("carouselQuartierLibre");
 
-const displayBox = () => {
+const displayModal = () => {
   const hiddenModalElem = document.getElementById("modal");
   hiddenModalElem.style.display = "block";
 }
 
-const closeBox = () => {
+const closeModal = () => {
   const closeModalElem = document.getElementById("modal");
   closeModalElem.style.display = 'none';
 }
 
 clickableElem.addEventListener("click", () => {
-  displayBox();
+  displayModal();
 });
 
 
 closeModalElem.addEventListener('click', () => {
-  closeBox();
+  closeModal();
 })
 //Array adressses
 
