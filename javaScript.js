@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title police">${resids[i].name}</h5>
+            <h5 class="card-title police" style="font-size:25px">${resids[i].name}</h5>
             <p class="card-text">${resids[i].presentation}</p>
             <p class="card-text"><a href="${resids[i].personnalLink}"><img src="https://zupimages.net/up/19/12/bzal.png" alt="" /></a></p>
           </div>
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title police">${resids[i].corporation}</h5>
+            <h5 class="card-title police" style="font-size:25px">${resids[i].corporation}</h5>
             <p class="card-text">${resids[i].corporationPresentation}</p>
             <p class="card-text"><a href="${resids[i].corporationLink}">${resids[i].corporationLink}</a></p>
           </div>
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title police">${resids[i].corporation}</h5>
+              <h5 class="card-title police" style="font-size:25px">${resids[i].corporation}</h5>
               <p class="card-text">${resids[i].corporationPresentation}</p>
               <p class="card-text"><a href="${resids[i].corporationLink}">${resids[i].corporationLink}</a></p>
             </div>
