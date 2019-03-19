@@ -1,6 +1,6 @@
 // Carousel modal
 const closeModalElem = document.getElementById("modal")
-const clickableElem = document.getElementById("carouselQuartierLibre");
+const clickableElem = document.getElementById("videoModal");
 
 const displayModal = () => {
   const hiddenModalElem = document.getElementById("modal");
