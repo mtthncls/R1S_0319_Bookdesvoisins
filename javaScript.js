@@ -8,10 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
     hiddenModalElem.style.display = "block";
   }
 
-  const closeModal = () => {
-    const closeModalElem = document.getElementById("modal");
-    closeModalElem.style.display = 'none';
-  }
+const closeModal = () => {
+  const closeModalElem = document.getElementById("modal");
+  closeModalElem.style.display = 'none';
+  const ytvideo = document.getElementById("video").src;
+  const stopvideo = ytvideo.replace("&autoplay=1", "");
+  document.getElementById("video").src = stopvideo;
+}
 
   clickableElem.addEventListener("click", () => {
     displayModal();
