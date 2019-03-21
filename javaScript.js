@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 const closeModal = () => {
   const closeModalElem = document.getElementById("modal");
   closeModalElem.style.display = 'none';
-  const ysrc = document.getElementById("video").src;
-  const newsrc = ysrc.replace("&autoplay=1", "");
-  document.getElementById("video").src = newsrc;
+  const ytvideo = document.getElementById("video").src;
+  const stopvideo = ytvideo.replace("&autoplay=1", "");
+  document.getElementById("video").src = stopvideo;
 }
 
   clickableElem.addEventListener("click", () => {
