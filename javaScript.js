@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   location1Elem.innerHTML = adressCount;
 
   const resids = [{
-      name: "Faucheux Virgine",
+      name: "Faucheux Virginie",
       presentation: "Pour la société Le Bloc j'occupe les fonctions d'Office Manager, en d'autres termes l’administratif et la comptabilité. Sur le projet Quartier Libre, j'ai en charge l'animation de la vie communautaire et la gestion des bâtiments, donc le bien-être des Résidents",
       picture: "https://quartierlibre.co/sites/default/files/styles/large/public/upload/Le%20Bloc_Virginie%20FAUCHEUX.jpg?itok=2_PVa9vb",
       personnalLink: "https://www.linkedin.com/in/virginie-faucheux-ab068a136/",
